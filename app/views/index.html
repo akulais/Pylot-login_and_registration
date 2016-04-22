@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Login and Registration</title>
+         <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    </head>
+<!--Start of Body-->
+<body>
+
+      {% with errors = get_flashed_messages(category_filter=["errors"]) %}
+        {% if errors %}
+        <ul>
+          {%- for msg in errors %}
+            <li>{{ msg }}</li>
+              {% endfor %}
+       </ul>
+        {% endif %}
+      {% endwith %}
+
+  <h2>Register</h2>
+  <form action='/register' method='POST' id="register">
+
+<label for="First name">First name:</label>
+<input type="text" name="first_name" id="first_name">
+
+<label for="Last name">Last name:</label>
+<input type="text" name="last_name" id="last_name">
+
+<label for="Email">Email:</label>
+<input type="text" name="email" id="email">
+
+<label for="Password">Password:</label>
+<input type="password" name="password" id="password">
+
+<label for="Cfm pwd">Cfm pwd:</label>
+<input type="password" name="confirm_password" id="confirm_password">
+  
+  <input id="reg_btn" type="submit" value="Register">
+    </form>
+
+
+  <h2>Login</h2>
+  <form action='/login' method='POST' id="login">
+<label for="Email">Email:</label>
+<input type="text" name="email" id="email">
+<label for="Password">Password:</label>
+<input type="password" name="password" id="password">
+  <input id="login_btn" type="submit" value="login">
+    </form>
+<a id="index_reset_button" href="/reset">Reset</a>
+
+</html>

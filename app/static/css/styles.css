@@ -1,0 +1,127 @@
+@media only screen and (max-width: 480px) {
+    /*body { background-color: gray; }*/
+    p { font-size: 0.5em; }
+    h1 { font-size: 2.5em; }
+	}
+@media only screen and (min-width: 481px) {
+    /*body { background-color: black; }*/
+    p { font-size: 1em; }
+    h1 { font-size: 4em; }
+	}
+@media only screen and (min-width: 1024px) {
+ /*   body { background-color: black; }*/
+    p { font-size: 2em; }
+    h1 { font-size: 5em; }
+	}
+/*index view page css*/
+body {
+	padding: 20px;
+	background-color: #20B4E6;
+	display: inline-block;
+	color: red;
+}
+h1 {
+	color: blue;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+#register {
+	background-color: #067094;
+	border-radius: 25px;
+	border: 4px double blue;
+	display: inline-block;
+	width: 350px;
+	padding: 10px;
+	margin-bottom: 50px;
+	margin-right: 50px;
+	margin-left: 20px;
+	box-shadow: 0px 0px 10px 10px blue;
+}
+#register label {
+	width: 90px;
+	text-align: right;
+	margin-right: 10px;
+	padding: 5px;
+	display: inline-block;
+}
+#register input {
+	margin-right: 20px;
+	display: inline-block;
+}
+#reg_btn {
+	width: 75px;
+	border-radius: 25px;
+	border: 3px groove red;
+	font-weight: bold;
+	margin-left: 225px;
+	margin-top: 10px;
+}
+#reg_btn:hover {
+	width: 75px;
+	border-radius: 25px;
+	border: 3px groove blue;
+	font-weight: bold;
+	margin-left: 225px;
+	margin-top: 10px;
+	color: yellow;
+	box-shadow: 0px 0px 5px 5px blue;
+	background-color: #3C4352;
+}
+#login {
+	vertical-align: top;
+	background-color: #067094;
+	border-radius: 25px;
+	border: 4px double blue;
+	display: inline-block;
+	width: 350px;
+	padding: 10px;
+	box-shadow: 0px 0px 10px 10px blue;
+	margin-left: 20px;
+}
+#login label {
+	width: 100px;
+	text-align: right;
+	margin-right: 20px;
+	padding: 5px;
+	display: inline-block;
+}
+#login input {
+	margin-right: 20px;
+	color: red;
+}
+#login_btn {
+	width: 75px;
+	border-radius: 25px;
+	border: 3px groove red;
+	font-weight: bold;
+	margin-left: 225px;
+	margin-top: 10px;
+}
+#login_btn:hover {
+	width: 75px;
+	border-radius: 25px;
+	border: 3px groove blue;
+	font-weight: bold;
+	margin-left: 225px;
+	margin-top: 10px;
+	color: yellow;
+	box-shadow: 0px 0px 5px 5px blue;
+	background-color: #3C4352;
+}
+
+#index_reset_button {
+	color: purple;
+	border-radius: 25px;
+	border: 4px double purple;
+	background-color: gray;
+	font-weight: bold;
+	margin-top: 50px;
+}
+#index_reset_button:hover {
+	color: purple;
+	border-radius: 25px;
+	border: 4px double white;
+	box-shadow: 0px 0px 5px 5px white;
+	font-weight: bold;
+	margin-top: 50px;
+}
